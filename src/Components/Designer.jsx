@@ -28,7 +28,7 @@ export const Designer = () => {
         </article>    
         {/* Área de Edición */}
         <section className='Edit-Area'>
-            {/* {Área de subir imagen} */}
+            {/* {Área de subir imagenes} */}
                 <h3>Subir imagen</h3>
             <form >
                 <label className='Img-Select-Butn' onClick={()=>document.querySelector(".foto").click()} >Selecciona Imagen</label>
