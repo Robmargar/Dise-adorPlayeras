@@ -20,10 +20,10 @@ export const Designer = () => {
                {image?
                 <img id="Img-Personal" className="Img-mobil"src={image} alt="avatar" />
                 :
-                <img id="Img-Personal" className="Img-mobil"src="/public/honor.svg" alt="avatar" />
+                <img id="Img-Personal" className="Img-mobil"src="honor.svg" alt="avatar" />
                 }
                
-            <img className='Shirt-mask' src="../../public/shirt-mask5.png" alt="" />
+            <img className='Shirt-mask' src="/shirt-mask5.png" alt="" />
             </div>
         </article>    
         {/* Área de Edición */}

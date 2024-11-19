@@ -115,7 +115,7 @@ export const Position = () => {
                         <img className='Img-Arrow' name="izq" src="/arrows-left.svg" alt="" onClick={ChangePosition}/>
                     </button>
                     <button className='Btn-Pos'>
-                        <img className='Img-Arrow' name="centrar" src="/public/a-center-user.svg" alt="" onClick={ChangePosition}/>
+                        <img className='Img-Arrow' name="centrar" src="/a-center-user.svg" alt="" onClick={ChangePosition}/>
                     </button>
                     <button className='Btn-Pos'>
                         <img className='Img-Arrow' name="der" src="/arrows-right.svg" alt="" onClick={ChangePosition} />
