@@ -1,0 +1,56 @@
+.ColorPalet{
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    justify-items: center;
+}
+
+
+.Btn-color{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+
+}
+
+.Btn-color:hover {
+    box-shadow: 7px 5px 26px -5px #414138;
+}
+   
+.Btn-color:active {
+    transform: scale(1.5);
+    box-shadow: 7px 5px 26px -5px #47473f;
+}
+
+.white{
+    background-color: rgb(251, 252, 252);
+}
+
+.blue{
+    background-color: rgb(88, 88, 138);
+}
+
+.red{
+    background-color: rgb(154, 0, 0);
+}
+
+.green{
+    background-color: rgb(0, 128, 0);
+}
+
+.yellow{
+    background-color: rgb(209, 206, 8);
+}
+
+.black{
+    background-color: rgb(36, 36, 36);
+}
+
+
+.Btn-Pos:hover, .Btn-color:hover, .Pos-Icon:hover{
+    cursor: pointer;
+}
+
+

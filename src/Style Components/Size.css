@@ -1,0 +1,61 @@
+h5{
+    padding-top: 35px;
+    margin: 5px;
+
+    border-radius: 5px;
+}
+
+.Size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Size-Area{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.Btn-Size{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(65, 8, 19);
+    width: 65px;
+    height: 85px;
+    padding:5px ;
+    margin-inline: 30px;
+    border-radius: 10px;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carta{
+    background-image: url("/Tamaño-Icono.svg");
+}
+
+
+.media{
+    background-image: url("/half-size.svg");
+}
+
+.cuarto{
+    background-image: url("/cuarter-size.svg");
+}
+
+.Btn-Size:hover{
+    cursor: pointer;
+    background-color: #fcdcdc;
+}
+
+.Size-Icon{
+    margin-left: 10px;
+    z-index: 10;
+}
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="SVGRepo_iconCarrier" transform="matrix(1 0 0 1 0 0)">
+   <g fill="none" fill-rule="evenodd" id="svg_1">
+    <g id="svg_2">
+     <g id="svg_3" transform="translate(1 1)">
+      <rect height="32" id="svg_4" rx="1" stroke="#474747" stroke-width="2" width="24" x="0" y="0.13"/>
+      <g fill="#575757" id="svg_5">
+       <path d="m5,11.13l14,0l0,1l-14,0l0,-1z" id="svg_6"/>
+       <path d="m5,14.13l14,0l0,1l-14,0l0,-1z" id="svg_7"/>
+       <path d="m5,17.13l14,0l0,1l-14,0l0,-1z" id="svg_8"/>
+       <path d="m5,20.13l6,0l0,1l-6,0l0,-1z" id="svg_9"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <path d="m1.3,32.87l0,-31.5l23.75,0l0,31.5l-23.75,0z" fill="#d6cfcf" fill-opacity="0.1" id="svg_14" stroke="#f20000" stroke-width="2"/>
+ </g>
+</svg>

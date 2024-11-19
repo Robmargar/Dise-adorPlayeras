@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer" id="SVGRepo_iconCarrier">
+  <title>ionicons-v5-q</title>
+  <path d="m314.56,48s-22.78,8 -58.56,8s-58.56,-8 -58.56,-8a31.94,31.94 0 0 0 -10.57,1.8l-154.87,54.2l16.63,88l48.88,5.52a24,24 0 0 1 21.29,24.58l-6.8,241.9l288,0l-6.8,-241.9a24,24 0 0 1 21.29,-24.58l48.88,-5.52l16.63,-88l-154.87,-54.2a31.94,31.94 0 0 0 -10.57,-1.8z" fill="none" id="svg_1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32px"/>
+  <path d="m333.31,52.66a80,80 0 0 1 -154.62,0" fill="none" id="svg_2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32px"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="330" cy="397.5" fill="#ff0000" id="svg_3" rx="40.5" ry="40.5" stroke="#000000"/>
+  <circle cx="330.5" cy="399" fill="#ffff00" id="svg_4" r="26.91" stroke="#000000"/>
+ </g>
+</svg>

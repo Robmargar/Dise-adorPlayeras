@@ -1,0 +1,72 @@
+.Position-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Btn-Pos:hover, .Btn-color:hover, .Pos-Icon:hover{
+    cursor: pointer;
+}
+
+.Arrows{
+    display: grid;
+    width: 225px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.Position{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+.Btn-Pos{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.btn-Pos-2{
+    grid-column-start:1;
+    grid-column-end: 2;
+}
+
+.btn-Pos-3{
+    grid-column-start:2;
+    grid-column-end: 3;
+}
+
+.Img-Arrow{
+    width: 75px;
+}
+
+
+.Btn-Pos-Icon{
+    width: 75px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Btn-Pos-Icon:hover, .Btn-Pos:hover {
+    transform: translate(-2.07em, -2 .07em);
+    box-shadow: 0.15em 0.15em;
+}
+   
+.Btn-Pos-Icon:active, .Btn-Pos:active {
+    transform: translate(0.09em, 0.09em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.Pos-Icon{
+    width: 75px;
+    height: 75px;
+}
+
+

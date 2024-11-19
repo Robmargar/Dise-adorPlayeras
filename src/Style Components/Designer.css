@@ -1,0 +1,135 @@
+h2{
+    font-size: 50px;
+}
+
+.Contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100rem;
+    height: 70rem;
+    margin: 10px 0;
+    padding: 3rem;
+    border-radius: 43px;
+    border-radius: 43px;
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow:  12px 12px 18px #a7a7a7,
+                -12px -12px 18px #ffffff;
+}
+
+.Up-Image{
+    font-size: 15px;
+}
+
+.Up-Image:hover::file-selector-button{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.Up-Image::file-selector-button{
+    width: 220px;
+    height: 50px;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 3px 3px #666666;
+    cursor: pointer;
+    margin: 35px 0;
+}
+
+.Edit-Area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+
+
+.Shirt-Rectangle{
+    position: relative;
+    display: flex;
+    margin-left: 9%;
+}
+
+.Shirt{
+    border-radius: 38px;
+    height: 780px;
+    width: 650px;
+    background: url("/public/shirt.png"), url("/public/shirt-mask2.jpg");
+    /* background-color:#eeeeee; */
+    background-blend-mode: multiply;
+    z-index: 0;
+}
+
+.Shirt-mask{
+    position:absolute;
+    border-radius: 35px;
+}
+/* 
+.Img-Select-Butn{
+    font-size: 20px;
+    background: #cfcece;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #b6b6b6;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+} */
+/* .Img-Select-Butn:hover {
+    box-shadow: 7px 5px 36px -5px #3b3b3b;
+   }
+   
+   .Img-Select-Butn:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 36px -10px #1d1d1d;
+   } */
+
+.Img-Select-Butn{
+    font-size: 20px;
+    background: #b6b6b6;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.Img-Select-Butn:hover {
+    transform: translate(-2.07em, -2 .07em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   .Img-Select-Butn:active {
+    transform: translate(0.09em, 0.09em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+.Img-mobil{
+    position: absolute;
+    /* Movimiento Vertical*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* Movimiento Horizontal*/
+    width: 200px;
+    z-index: 10;
+}
+
+.Btn-Pos:hover, .Btn-color:hover, .Pos-Icon:hover{
+    cursor: pointer;
+}
+
+
