@@ -7,8 +7,8 @@ import"../Style Components/Position.css"
 export const Position = () => {
     const desplazamiento=2;
     const [margin, setMargin]=useState({
-        marginY:25,
-        marginX:31
+        marginY:0,
+        marginX:0
     });
     // en el eje x no debe pasar el rango entre 50% y -50%
     // en el eje y no debe pasar el rango entre 73% y 0%
@@ -25,7 +25,7 @@ export const Position = () => {
     };
 
     function moverAbajo(){
-        if(margin.marginY<73){
+        if(margin.marginY<75){
             const newMargin={
                 ...margin,
                 marginY:margin.marginY+desplazamiento
@@ -35,7 +35,7 @@ export const Position = () => {
     };
 
     function moverDerecha(){
-        if(margin.marginX <50){
+        if(margin.marginX<60){
             const newMargin={
                         ...margin,
                         marginX:margin.marginX+desplazamiento
@@ -45,7 +45,7 @@ export const Position = () => {
     };
 
     function moverIzq(){
-        if(margin.marginX>-50){
+        if(margin.marginX>-31){
         const newMargin={
                      ...margin,
                       marginX:margin.marginX-desplazamiento
