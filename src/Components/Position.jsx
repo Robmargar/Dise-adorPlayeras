@@ -10,58 +10,72 @@ export const Position = () => {
         marginY:25,
         marginX:31
     });
+    // en el eje x no debe pasar el rango entre 50% y -50%
+    // en el eje y no debe pasar el rango entre 73% y 0%
+
 
     function moverArriba(){
-        const newMargin={
-                     ...margin,
-                      marginY:margin.marginY-desplazamiento
-                    };
-        setMargin(newMargin);
+        if(margin.marginY>5){
+            const newMargin={
+                         ...margin,
+                          marginY:margin.marginY-desplazamiento
+                        };
+            setMargin(newMargin);
+        }
     };
 
     function moverAbajo(){
-        const newMargin={
-                     ...margin,
-                      marginY:margin.marginY+desplazamiento
-                    };
-        setMargin(newMargin);
+        if(margin.marginY<73){
+            const newMargin={
+                ...margin,
+                marginY:margin.marginY+desplazamiento
+            };
+            setMargin(newMargin);
+        };
     };
 
     function moverDerecha(){
-        const newMargin={
-                     ...margin,
-                      marginX:margin.marginX+desplazamiento
-                    };
-        setMargin(newMargin);
+        if(margin.marginX <50){
+            const newMargin={
+                        ...margin,
+                        marginX:margin.marginX+desplazamiento
+                        };
+            setMargin(newMargin);
+        };
     };
 
     function moverIzq(){
+        if(margin.marginX>-50){
         const newMargin={
                      ...margin,
                       marginX:margin.marginX-desplazamiento
                     };
         setMargin(newMargin);
+        };
     };
 
     function ChangePosition(e){
-        console.log(e.target.name)
+        // console.log(e.target.name)
         let position=document.getElementById('Img-Personal');
         switch(e.target.name){
             case "arriba":
                     moverArriba();
                     position.style.marginTop= margin.marginY+"%";
-                 break;
-            case "bajar":
-                    moverAbajo();
-                    position.style.marginTop= margin.marginY+"%";
-                 break;
+                    break;
+                    case "bajar":
+                        moverAbajo();
+                        position.style.marginTop= margin.marginY+"%";
+                        break;
+                    
             case "izq":
                     moverIzq();
                     position.style.marginLeft=margin.marginX+"%"; 
+                    console.log(margin);
                  break;
             case "der":
                     moverDerecha();
                     position.style.marginLeft=margin.marginX+"%";  
+                    console.log(margin);
                  break; 
                   
            case "centrar":

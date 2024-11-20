@@ -50,7 +50,7 @@ h2{
 .Shirt-Rectangle{
     position: relative;
     display: flex;
-    margin-left: 9%;
+    justify-content: center;
 }
 
 .Shirt{
@@ -66,31 +66,8 @@ h2{
 .Shirt-mask{
     position:absolute;
     border-radius: 35px;
+    z-index: 70;
 }
-/* 
-.Img-Select-Butn{
-    font-size: 20px;
-    background: #cfcece;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    border-radius: 9px;
-    background: #b6b6b6;
-    border: none;
-    font-family: inherit;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-} */
-/* .Img-Select-Butn:hover {
-    box-shadow: 7px 5px 36px -5px #3b3b3b;
-   }
-   
-   .Img-Select-Butn:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 36px -10px #1d1d1d;
-   } */
 
 .Img-Select-Butn{
     font-size: 20px;
@@ -118,11 +95,6 @@ h2{
 .Img-mobil{
     position: absolute;
     /* Movimiento Vertical*/
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
     /* Movimiento Horizontal*/
     width: 200px;
     z-index: 10;

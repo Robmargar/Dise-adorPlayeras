@@ -8,13 +8,13 @@ export const Size = () => {
         let sizeimg=document.getElementById('Img-Personal');
         switch(e.target.name){
             case "carta":
-                    sizeimg.style.width=200+"px";
+                    sizeimg.style.width=170+"px";
                 break;
             case "media":
                     sizeimg.style.width=125+"px";
                 break;
             case "cuarto":
-                    sizeimg.style.width=70+"px";
+                    sizeimg.style.width=80+"px";
                 break;
         }
     };
