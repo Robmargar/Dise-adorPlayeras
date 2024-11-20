@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import"../Style Components/Position.css"
 
@@ -12,8 +12,7 @@ export const Position = () => {
     });
     // en el eje x no debe pasar el rango entre 50% y -50%
     // en el eje y no debe pasar el rango entre 73% y 0%
-
-
+    
     function moverArriba(){
         if(margin.marginY>5){
             const newMargin={
@@ -54,18 +53,31 @@ export const Position = () => {
         };
     };
 
+    function mover(X,Y){
+        const newMargin={
+            marginX:X,
+            marginY:Y
+           };
+        setMargin(newMargin);
+        console.log(margin);
+    };
+ 
+
     function ChangePosition(e){
-        // console.log(e.target.name)
+        console.log(e.target.name)
         let position=document.getElementById('Img-Personal');
         switch(e.target.name){
             case "arriba":
                     moverArriba();
                     position.style.marginTop= margin.marginY+"%";
+                    console.log(margin);
                     break;
-                    case "bajar":
-                        moverAbajo();
-                        position.style.marginTop= margin.marginY+"%";
-                        break;
+            
+            case "bajar":
+                    moverAbajo();
+                    position.style.marginTop= margin.marginY+"%";
+                    console.log(margin);
+                    break;
                     
             case "izq":
                     moverIzq();
@@ -79,24 +91,34 @@ export const Position = () => {
                  break; 
                   
            case "centrar":
-                    position.style.margin="25% 31%"; 
+                    position.style.marginLeft="0%";  
+                    position.style.marginTop="25%"; 
+                    mover(0,25);
                  break;
 
-            case "sup-izq":
-                    position.style.margin="25% 31%"; 
+            case "supizq":
+                    position.style.marginLeft="-32%";  
+                    position.style.marginTop="25%";
+                    mover(-32,25);  
                  break;
 
-            case "sup-der":
-                    position.style.margin="25% 31%"; 
+            case "supder":
+                position.style.marginLeft="34%";  
+                position.style.marginTop="25%";  
+                mover(34,25);
                  break;
 
-            case "inf-izq":
-                    position.style.margin="25% 31%"; 
-                 break;
+            case "infizq":
+                position.style.marginLeft="34%";  
+                position.style.marginTop="78%";  
+                mover(34,78); 
+                break;
 
-            case "inf-der":
-                    position.style.margin="25% 31%"; 
-                 break;
+            case "infder":
+                position.style.marginLeft="-32%";  
+                position.style.marginTop="78%"; 
+                mover(-32,78);
+                break;
                 
         }
     }
@@ -105,19 +127,29 @@ export const Position = () => {
                 <h3>Posición</h3>
                 <div className='Position'>
                     <button className="Btn-Pos-Icon" >
-                        <img className="Pos-Icon" src="/shirt-icon-supizq.svg" alt=""/>
+                        <img className="Pos-Icon" name="supizq"
+                        src="/shirt-icon-supizq.svg" alt=""
+                        onClick={ChangePosition}/>
                     </button>
                     <button className="Btn-Pos-Icon" >
-                        <img className="Pos-Icon" src="/shirt-icon-supder.svg" alt=""/>
+                        <img className="Pos-Icon" name="supder" 
+                        src="/shirt-icon-supder.svg" alt=""
+                        onClick={ChangePosition}/>
                     </button>
                     <button className="Btn-Pos-Icon" >
-                        <img className="Pos-Icon" name="centrar" src="/shirt-icon-center.svg" alt="" onClick={ChangePosition}/>
+                        <img className="Pos-Icon" name="centrar" 
+                        src="/shirt-icon-center.svg" alt="" 
+                        onClick={ChangePosition}/>
                     </button>
                     <button className="Btn-Pos-Icon" >
-                        <img className="Pos-Icon" src="/shirt-icon-infder.svg" alt=""/>
+                        <img className="Pos-Icon" name="infizq"
+                        src="/shirt-icon-infder.svg" alt=""
+                        onClick={ChangePosition}/>
                     </button>
                     <button className="Btn-Pos-Icon" >
-                        <img className="Pos-Icon" src="/shirt-icon-infizq.svg" alt=""/>
+                        <img className="Pos-Icon" name="infder"
+                        src="/shirt-icon-infizq.svg" alt=""
+                        onClick={ChangePosition}/>
                     </button>
                 </div>
 
