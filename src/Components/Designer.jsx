@@ -20,7 +20,7 @@ export const Designer = () => {
                {image?
                 <img id="Img-Personal" className="Img-mobil"src={image} alt="avatar" />
                 :
-                <img id="Img-Personal" className="Img-mobil"src="honor.svg" alt="avatar" />
+                <img  className="Img-mobil" src="honor.svg" alt="avatar"/>
                 }
                
             <img className='Shirt-mask' src="/shirt-mask5.png" alt="" />
@@ -34,7 +34,6 @@ export const Designer = () => {
                 <label className='Img-Select-Butn' onClick={()=>document.querySelector(".foto").click()} >Selecciona Imagen</label>
                 <input type="file" className="foto" accept="image/*" hidden 
                 onChange={({target:{files}})=>{
-                    // files[0]&&setFile(files[0].name)
                     if(files){
                         setImage(URL.createObjectURL(files[0]));
                     }

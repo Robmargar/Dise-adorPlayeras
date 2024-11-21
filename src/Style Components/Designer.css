@@ -94,8 +94,6 @@ h2{
 
 .Img-mobil{
     position: absolute;
-    /* Movimiento Vertical*/
-    /* Movimiento Horizontal*/
     width: 140px;
     z-index: 10;
 }

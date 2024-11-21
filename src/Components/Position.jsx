@@ -13,43 +13,47 @@ export const Position = () => {
     // en el eje x no debe pasar el rango entre 50% y -50%
     // en el eje y no debe pasar el rango entre 73% y 0%
     
-    function moverArriba(){
+    function moverArriba(position){
         if(margin.marginY>5){
             const newMargin={
                          ...margin,
                           marginY:margin.marginY-desplazamiento
                         };
             setMargin(newMargin);
+            position.style.marginTop= (margin.marginY-desplazamiento)+"%";
         }
     };
 
-    function moverAbajo(){
+    function moverAbajo(position){
         if(margin.marginY<75){
             const newMargin={
                 ...margin,
                 marginY:margin.marginY+desplazamiento
             };
             setMargin(newMargin);
+            position.style.marginTop= (margin.marginY+desplazamiento)+"%";
         };
     };
 
-    function moverDerecha(){
+    function moverDerecha(position){
         if(margin.marginX<60){
             const newMargin={
                         ...margin,
                         marginX:margin.marginX+desplazamiento
                         };
             setMargin(newMargin);
+            position.style.marginLeft=(margin.marginX+desplazamiento)+"%";  
         };
     };
 
-    function moverIzq(){
+    function moverIzq(position){
         if(margin.marginX>-31){
         const newMargin={
                      ...margin,
                       marginX:margin.marginX-desplazamiento
                     };
         setMargin(newMargin);
+        position.style.marginLeft=(margin.marginX-desplazamiento)+"%"; 
         };
     };
 
@@ -59,35 +63,25 @@ export const Position = () => {
             marginY:Y
            };
         setMargin(newMargin);
-        console.log(margin);
     };
  
 
     function ChangePosition(e){
-        console.log(e.target.name)
         let position=document.getElementById('Img-Personal');
         switch(e.target.name){
             case "arriba":
-                    moverArriba();
-                    position.style.marginTop= margin.marginY+"%";
-                    console.log(margin);
+                    moverArriba(position);
                     break;
             
             case "bajar":
-                    moverAbajo();
-                    position.style.marginTop= margin.marginY+"%";
-                    console.log(margin);
+                    moverAbajo(position);
                     break;
                     
             case "izq":
-                    moverIzq();
-                    position.style.marginLeft=margin.marginX+"%"; 
-                    console.log(margin);
+                    moverIzq(position);
                  break;
             case "der":
-                    moverDerecha();
-                    position.style.marginLeft=margin.marginX+"%";  
-                    console.log(margin);
+                    moverDerecha(position);
                  break; 
                   
            case "centrar":
@@ -103,25 +97,25 @@ export const Position = () => {
                  break;
 
             case "supder":
-                position.style.marginLeft="34%";  
-                position.style.marginTop="25%";  
-                mover(34,25);
+                    position.style.marginLeft="34%";  
+                    position.style.marginTop="25%";  
+                    mover(34,25);
                  break;
 
             case "infizq":
-                position.style.marginLeft="34%";  
-                position.style.marginTop="78%";  
-                mover(34,78); 
-                break;
+                    position.style.marginLeft="34%";  
+                    position.style.marginTop="78%";  
+                    mover(34,78); 
+                  break;
 
             case "infder":
-                position.style.marginLeft="-32%";  
-                position.style.marginTop="78%"; 
-                mover(-32,78);
-                break;
-                
+                    position.style.marginLeft="-32%";  
+                    position.style.marginTop="78%"; 
+                    mover(-32,78);
+                 break;    
         }
     }
+
   return (
     <div className='Position-Container'>
                 <h3>Posición</h3>
