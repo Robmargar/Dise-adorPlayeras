@@ -113,6 +113,9 @@ export const Position = () => {
                     position.style.marginTop="78%"; 
                     mover(-32,78);
                  break;    
+            
+            default:
+                break;
         }
     }
 

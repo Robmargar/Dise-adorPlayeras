@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Position } from './Position';
 import { Size } from './Size';
 import { Color } from './Color';
@@ -9,6 +9,14 @@ export const Designer = () => {
     const[image,setImage]=useState(null)
     const[file,setFile]=useState();
  
+    function Centrar(){
+        let position=document.getElementById('Img-Personal');
+        position.style.marginLeft="0%";  
+        position.style.marginTop="25%"; 
+    };
+    useEffect(()=>{
+            Centrar
+        },[image])
 
   return (
     <section className='Contenedor'>
@@ -18,9 +26,13 @@ export const Designer = () => {
             <div className='Shirt-Rectangle'>
                 <div id="shirt-back" className='Shirt'/>
                {image?
-                <img id="Img-Personal" className="Img-mobil"src={image} alt="avatar" />
+                <img id="Img-Personal" className="Img-mobil" src={image} alt="avatar" />
                 :
-                <img  className="Img-mobil" src="honor.svg" alt="avatar"/>
+                // id="Img-Personal" className="Img-mobil"
+                <div className='Default-img-container'>
+                    <img className='Img-default' src="honor.svg" alt="avatar"/>   
+                    <p className='Img-default-text'> Selecciona una imagen</p>
+                </div>
                 }
                
             <img className='Shirt-mask' src="/shirt-mask5.png" alt="" />
