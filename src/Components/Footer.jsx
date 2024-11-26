@@ -1,7 +1,30 @@
 import React from 'react'
+import "../Style Components/Footer.css"
 
 export const Footer = () => {
-  return (
-    <div>Footer</div>
+  return (   
+    <section className='Footer'>
+      <article className='Footer-Name'>
+        <img src="/Logo_wh.png" alt="" />
+        <div>
+          <p>
+          <strong>Roberto Martínez </strong><span>Full-Stack Developer</span>
+          </p>
+        </div>
+      </article>
+      <div className='Contacto'>
+        <img src="./mail.svg" alt="" />
+         <span>roberto.mar.garc@gmail.com</span>
+      </div>
+      <div className='Contacto'>
+        <a href="https://www.linkedin.com/in/roberto-mart%C3%ADnez-52ba10215/">
+          <img src="./li.svg" alt="https://www.linkedin.com/in/roberto-mart%C3%ADnez-52ba10215/" />
+        </a>
+        <a href="https://github.com/Robmargar">
+          <img src="./git.svg" alt="https://github.com/Robmargar" />
+        </a>
+      </div>
+        
+    </section>
   )
 }

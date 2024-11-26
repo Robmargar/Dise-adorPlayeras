@@ -1,0 +1,11 @@
+h1{
+    margin: 0px 30px;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85px;    
+    margin-bottom: 20px;
+}

@@ -1,0 +1,19 @@
+.Footer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Footer-Name{
+    display: flex;
+    height: 50px;
+}
+
+.Contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

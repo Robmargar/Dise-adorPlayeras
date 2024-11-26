@@ -3,3 +3,10 @@
   padding: 2rem;
   text-align: center;
 }
+
+.Principal-Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
